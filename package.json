@@ -8,7 +8,8 @@
     "build": "rimraf dist && mkdirp dist && babel src -d dist",
     "test": "jest",
     "test:updateSnapshot": "jest --updateSnapshot",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "publish": "bash ./bin/publish.sh"
   },
   "files": [
     "dist/"
